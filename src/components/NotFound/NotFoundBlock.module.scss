@@ -1,0 +1,50 @@
+.notFound {
+  height: 50vh;
+  position: relative;
+}
+
+.notFoundText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  margin: auto;
+  font-size: clamp(55px, 17vw, 85px);
+  font-weight: 700;
+  color: rgb(218, 221, 24);
+}
+.subtitle {
+  font-size: clamp(20px, 7vw, 40px);
+  color: rgb(173, 173, 173);
+}
+
+.linksTitle {
+  margin: 10px 0;
+  font-size: clamp(10px, 15vw, 20px);
+  color: rgb(173, 173, 173);
+}
+
+.linksList {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  .link {
+    a {
+      font-size: clamp(14px, 4vw, 18px);
+      font-weight: 500;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #fe5f1e;
+      color: #fff;
+      display: block;
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background-color: #f24701;
+      }
+    }
+  }
+}
